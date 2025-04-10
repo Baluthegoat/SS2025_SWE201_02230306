@@ -3,7 +3,6 @@ import { Alert, StyleSheet, View } from 'react-native'
 import { supabase } from '../lib/supabase'
 import { Button, Input } from '@rneui/themed'
 
-
 export default function Auth() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

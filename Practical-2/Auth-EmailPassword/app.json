@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "local_market",
-    "slug": "local_market",
+    "name": "Auth-EmailPassword",
+    "slug": "Auth-EmailPassword",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -8,11 +8,22 @@ export default function Auth() {
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
 
+
+
+  const redirectUrl =
+  process.env.NODE_ENV === 'production'
+    ? 'https://dontmakemeangary.netlify.app/'
+    : 'http://localhost:3000';
+
   async function signInWithEmail() {
-    setLoading(true)
-    const { error } = await supabase.auth.signInWithPassword({
+    // setLoading(true)
+    const { data, error } = await supabase.auth.signInWithOtp({
       email: email,
-      password: password,
+      options: {
+        emailRedirectTo: redirectUrl,
+      }
+    //   password: password,
+        
     })
 
     if (error) Alert.alert(error.message)
@@ -30,9 +41,10 @@ export default function Auth() {
     })
 
     if (error) Alert.alert(error.message)
-    if (!session) Alert.alert('Please check your inbox for email verification!')
+    if (!session) Alert.alert('Sign -up success!! Please check your inbox for email verification!')
     setLoading(false)
   }
+
 
   return (
     <View style={styles.container}>

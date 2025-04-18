@@ -80,7 +80,7 @@ I've learned:
 3. How to implement sign-up functionality using the supabase
 4. How email verification works within authentication flows
 
-## WHAT CHALLENGES I HAVE FACED
+## What challenges I have faced
 
 Throughout the development process, I encountered several challenges:
 
@@ -91,7 +91,7 @@ Throughout the development process, I encountered several challenges:
 5. Ensuring proper email validation and verification processes
 6. Creating a responsive and user-friendly interface for the authentication 
 
-## HOW DID I OVERCOME
+## How did I overcome
 
 To overcome the challenges faced during development:
 

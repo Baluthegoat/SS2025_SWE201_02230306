@@ -16,7 +16,7 @@ export default function Auth() {
     : 'http://localhost:3000';
 
   async function signInWithEmail() {
-    // setLoading(true)
+    setLoading(true)
     const { data, error } = await supabase.auth.signInWithOtp({
       email: email,
       options: {

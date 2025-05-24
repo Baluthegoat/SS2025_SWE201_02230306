@@ -239,6 +239,7 @@ export default function Account({ session }: { session: Session }) {
       </View> */}
 
       {/* To-Do List Section */}
+
       <View style={[styles.verticallySpaced, styles.mt20]}>
         <Text style={styles.heading}>To-Do List</Text>
         <Input
@@ -267,6 +268,8 @@ export default function Account({ session }: { session: Session }) {
     </View>
   )
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
